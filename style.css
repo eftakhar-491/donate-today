@@ -234,6 +234,88 @@ a {
   margin-top: 30px;
   cursor: pointer;
 }
+/* footer update section */
+.update {
+  margin: 0 auto;
+  width: 60vw;
+}
+.update > h1 {
+  color: rgb(18, 18, 18);
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.update > p {
+  color: rgb(112, 112, 112);
+  font-family: inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 10px;
+}
+.update-details {
+  max-width: 800px;
+  height: 210px;
+  margin-top: 25px;
+  background-color: rgb(255, 244, 214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update-details input {
+  width: 40%;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+
+  font-family: inter;
+  border-radius: 5px 0px 0px 5px;
+  background-color: rgb(217, 217, 217);
+  color: rgb(170, 159, 159);
+  font-size: 16px;
+  font-weight: 500;
+}
+.update-details > .btn {
+  height: 40px;
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+}
+/* footer section */
+.footer {
+  width: auto;
+  height: 120px;
+  margin-top: 90px;
+  background-color: rgb(11, 13, 23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer > h1 {
+  color: rgb(255, 89, 89);
+  font-family: Lobster;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.footer > p {
+  color: rgb(217, 219, 225);
+  font-family: lobster;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
 /* Tablet Screen Layout */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .header-details > h1 {
@@ -282,6 +364,20 @@ a {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     row-gap: 5vh;
+  }
+  /* footer update section */
+  .update {
+    width: 80vw;
+  }
+  .update > p {
+    font-size: 16px;
+  }
+
+  .update-details input {
+    width: 60%;
+  }
+  .update-details > .btn {
+    font-size: 14px;
   }
 }
 /* Mobile Screen Layout */
@@ -363,5 +459,47 @@ a {
   .reality-details1 > .btn,
   .reality-details2 > .btn {
     width: 180px;
+    cursor: pointer;
+  }
+  /* footer update section */
+  .update {
+    width: 80vw;
+  }
+  .update > h1 {
+    font-size: 28px;
+  }
+  .update > p {
+    font-size: 14px;
+  }
+  .update-details {
+    flex-direction: column;
+  }
+  .update-details input {
+    width: 85%;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 14px;
+  }
+  .update-details > .btn {
+    width: 85%;
+    margin-top: 12px;
+    font-size: 14px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+  }
+  /* footer section */
+
+  .footer > h1 {
+    color: rgb(255, 89, 89);
+    font-family: Lobster;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  .footer > p {
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.6px;
   }
 }
