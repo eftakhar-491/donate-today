@@ -260,7 +260,7 @@ a {
 .update-details {
   max-width: 800px;
   height: 210px;
-  margin-top: 25px;
+  margin: 25px auto;
   background-color: rgb(255, 244, 214);
   display: flex;
   justify-content: center;
